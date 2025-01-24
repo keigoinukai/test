@@ -1,59 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipment Tracking</title>
+    <title>Package Tracking</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <div class="max-w-2xl mx-auto p-4">
-        <!-- Shipment Status -->
-        <div class="bg-white shadow-md rounded-lg p-6 mb-4">
-            <h2 class="text-2xl font-semibold mb-2">Delivered</h2>
-            <p class="text-gray-600">Your package has been delivered to the front door in Indianapolis, IN, US.</p>
-        </div>
 
-        <!-- Delivery Details -->
-        <div class="bg-white shadow-md rounded-lg p-6 mb-4">
-            <h3 class="text-xl font-semibold mb-2">Delivery by LaserShip</h3>
-            <p class="text-gray-600">Tracking Number: 1LSCYM1004IUKN0</p>
-            <a href="https://www.lasership.com" class="text-blue-500 hover:underline">Track via LaserShip</a>
-        </div>
+<body class="bg-white font-sans leading-normal tracking-normal">
+    <div class="max-w-3xl mx-auto p-4">
+        <!-- Status Section -->
+        <section class="bg-gray-100 rounded-xl ring-3 p-9 mb-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800">Delivered</h2>
+                    <p class="text-gray-600">Delivered Friday, January 17</p>
+                </div>
+                <img class="w-16 h-16 object-contain" src="PackageSealed-2UUOJP2A.svg" alt="Package Sealed">
+            </div>
+            <div class="flex mt-7 justify-between">
+                <img class="w-1/4 h-auto object-contain" src="horizontalComplete-N5Q4Q7DP.svg" alt="Step 1">
+                <img class="ml-1 w-1/4 h-auto object-contain" src="horizontalComplete-N5Q4Q7DP.svg" alt="Step 2">
+                <img class="ml-1 w-1/4 h-auto object-contain" src="horizontalComplete-N5Q4Q7DP.svg" alt="Step 3">
+                <img class="ml-1 w-1/4 h-auto object-contain" src="horizontalComplete-N5Q4Q7DP.svg" alt="Step 4">
+            </div>
+        </section>
 
-        <!-- Shipment Updates Timeline -->
-        <div class="bg-white shadow-md rounded-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Shipment Updates</h3>
-            <ul class="space-y-4">
-                <li>
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <svg class="h-6 w-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm0 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/>
-                            </svg>
+        <!-- Tracking Updates -->
+        <div>
+            <ul class="space-y-5">
+                <li class="relative flex pb-3">
+                    <div class="pt-2">
+                        <span class="h-2 w-2 rounded-full ring-3 relative flex" style="background-color: #00a0ac;">
+                            <span class="absolute h-5 w-5 animate-ping rounded-full bg-sky-400 opacity-75" style="background-color: #00a0ac; top: -5px; left: -5px;"></span>
+                        </span>
+                        <span class="absolute left-1 -ml-px h-full w-0.5" style="background-color: #00a0ac;" aria-hidden="true"></span>
+                    </div>
+                    <div class="flex justify-between items-start space-x-3 w-full pb-5 ml-5 border-b border-gray-300">
+                        <div>
+                            <h3 class="text-base">Miscellaneous</h3>
+                            <p class="text-gray-600 text-sm">INDIANAPOLIS, IN, US</p>
                         </div>
-                        <div class="ml-3">
-                            <p class="text-sm text-gray-600">Your package has been delivered - Front Door</p>
-                            <p class="text-sm font-medium text-gray-900">Indianapolis, IN, US</p>
+                        <div class="text-right">
+                            <h3 class="text-base">January 17</h3>
+                            <p class="text-gray-600 text-sm">1:03pm</p>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <svg class="h-6 w-6 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm0 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/>
-                            </svg>
+                <li class="relative flex pb-3">
+                    <div class="pt-2">
+                        <span class="h-2 w-2 rounded-full ring-3 relative flex" style="background-color: #00a0ac;">
+                        </span>
+                        <span class="absolute left-1 -ml-px h-full w-0.5" style="background-color: #00a0ac;" aria-hidden="true"></span>
+                    </div>
+                    <div class="flex justify-between items-start space-x-3 w-full pb-5 ml-5 border-b border-gray-300">
+                        <div>
+                            <h3 class="text-base">Your package has been delivered - Front Door</h3>
+                            <p class="text-gray-600 text-sm">INDIANAPOLIS, IN, US</p>
                         </div>
-                        <div class="ml-3">
-                            <p class="text-sm text-gray-600">Your package is out for delivery</p>
-                            <p class="text-sm font-medium text-gray-900">Indianapolis, IN, US</p>
+                        <div class="text-right">
+                            <h3 class="text-base">January 17</h3>
+                            <p class="text-gray-600 text-sm">1:03pm</p>
                         </div>
                     </div>
                 </li>
-                <!-- Add more updates as needed -->
+                <li class="relative flex pb-3">
+                    <div class="pt-2">
+                        <span class="h-2 w-2 rounded-full ring-3 relative flex" style="background-color: #00a0ac;">
+                        </span>
+                        <span class="absolute left-1 -ml-px h-full w-0.5" style="background-color: #00a0ac;" aria-hidden="true"></span>
+                    </div>
+                    <div class="flex justify-between items-start space-x-3 w-full pb-5 ml-5 border-b border-gray-300">
+                        <div>
+                            <h3 class="text-base">Your package is out for delivery</h3>
+                            <p class="text-gray-600 text-sm">INDIANAPOLIS, IN, US</p>
+                        </div>
+                        <div class="text-right">
+                            <h3 class="text-base">January 17</h3>
+                            <p class="text-gray-600 text-sm">1:03pm</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="relative flex pb-3">
+                    <div class="pt-2">
+                        <span class="h-2 w-2 rounded-full ring-3 relative flex" style="background-color: #00a0ac;">
+                        </span>
+                        <span class="absolute left-1 -ml-px h-full w-0.5" style="background-color: #00a0ac;" aria-hidden="true"></span>
+                    </div>
+                    <div class="flex justify-between items-start space-x-3 w-full pb-5 ml-5 border-b border-gray-300">
+                        <div>
+                            <h3 class="text-base">We're preparing your package for delivery
+                            </h3>
+                            <p class="text-gray-600 text-sm">INDIANAPOLIS, IN, US</p>
+                        </div>
+                        <div class="text-right">
+                            <h3 class="text-base">January 17</h3>
+                            <p class="text-gray-600 text-sm">1:03pm</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- Repeat the above <li> block for each tracking update -->
+                <li class="relative flex pb-3">
+                    <div class="pt-2">
+                        <span class="h-2 w-2 rounded-full ring-3 relative flex" style="background-color: #00a0ac;"></span>
+                    </div>
+                    <div class="flex justify-between items-start space-x-3 w-full pb-5 ml-5">
+                        <h3 class="text-base">Show 4 previous updates</h3>
+                    </div>
+                </li>
             </ul>
+        </div>
+
+        <!-- Delivery Information -->
+        <div class="rounded-2xl w-full mt-5 border border-gray-300">
+            <div class="p-3 border-b border-gray-300 flex justify-between">
+                <div class="flex items-center">
+                    <img class="w-12 h-12 rounded-full object-contain" src="Lasership-OVSK6GVE.svg" alt="LaserShip">
+                    <div class="ml-2">
+                        <h3 class="text-base">Delivery by LaserShip</h3>
+                        <p class="text-gray-600 text-sm">Routed delivery shipping</p>
+                    </div>
+                </div>
+                <div class="flex items-center font-medium">
+                    <p>1LSCYM1004IUKN0</p>
+                    <div class="w-4 ml-2">
+                        <svg viewBox="0 0 20 20">
+                            <path d="M7.5 2a1.5 1.5 0 0 0-1.5 1.5v9.5a1 1 0 0 0 1 1h9.5a1.5 1.5 0 0 0 1.5-1.5v-9a1.5 1.5 0 0 0-1.5-1.5h-9zm-4 4h.5v10h10v.5a1.5 1.5 0 0 1-1.5 1.5h-9a1.5 1.5 0 0 1-1.5-1.5v-9a1.5 1.5 0 0 1 1.5-1.5z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 text-center">
+                <a target="_blank" class="text-blue-500 hover:underline" href="https://www.lasership.com/track.php?track_number_input=1LSCYM1004IUKN0" rel="noopener noreferrer">Track via LaserShip</a>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
