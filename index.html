@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipment Tracking</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-2xl mx-auto p-4">
+        <!-- Shipment Status -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-4">
+            <h2 class="text-2xl font-semibold mb-2">Delivered</h2>
+            <p class="text-gray-600">Your package has been delivered to the front door in Indianapolis, IN, US.</p>
+        </div>
+
+        <!-- Delivery Details -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-4">
+            <h3 class="text-xl font-semibold mb-2">Delivery by LaserShip</h3>
+            <p class="text-gray-600">Tracking Number: 1LSCYM1004IUKN0</p>
+            <a href="https://www.lasership.com" class="text-blue-500 hover:underline">Track via LaserShip</a>
+        </div>
+
+        <!-- Shipment Updates Timeline -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4">Shipment Updates</h3>
+            <ul class="space-y-4">
+                <li>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <svg class="h-6 w-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm0 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-gray-600">Your package has been delivered - Front Door</p>
+                            <p class="text-sm font-medium text-gray-900">Indianapolis, IN, US</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <svg class="h-6 w-6 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm0 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-gray-600">Your package is out for delivery</p>
+                            <p class="text-sm font-medium text-gray-900">Indianapolis, IN, US</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- Add more updates as needed -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
